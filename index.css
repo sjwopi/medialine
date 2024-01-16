@@ -1,0 +1,148 @@
+@import url("./vendor/reset.css");
+@import url("./vendor/fonts.css");
+
+.root {
+  width: 1520px;
+  margin: 0 auto;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  background: #F4F8FF;
+
+  --blue: #2A5199;
+  --blue-clear: rgba(42, 81, 153, 0.8);
+  --light-blue: #F7FAFF;
+  --light-gray: #FEFEFE;
+
+  
+  --gray-text: #656565;
+  --white-text: #ffffff;
+  --light-gray-text: #EAEEF5;
+  --dark-text: #000A1D;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: 45px;
+  margin: 32px 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 175px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__link {
+  margin: 0 60px 0 0;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark-text);
+}
+.header__link:last-child {
+  margin: 0;
+}
+
+/* Overlay */
+
+.overlay {
+  position: relative;
+  margin-bottom: 64px;
+}
+.overlay__img {
+  width: 100%;
+  height: 810px;
+}
+.overlay__rectange {
+  position: absolute;
+  z-index: 2;
+  top: 73px;
+  right: 0;
+  padding: 45px 60px;
+  max-width: 570px;
+  background-color: var(--blue-clear);
+  border-radius: 5px 0 0 5px;
+
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--white-text);
+  text-transform: uppercase;
+  text-align: center;
+}
+.overlay__search {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+
+  width: 1190px;
+  height: 66px;
+  margin: -33px auto 0 auto;
+}
+.overlay__input {
+  border: 0.5px var(--gray-text) solid;
+  border-radius: 30px;
+  color: var(--gray-text);
+  background-color: var(--light-blue);
+
+  width: 970px;
+  height: 100%;
+  padding: 22px 30px;
+}
+.overlay__search-btn {
+  width: 100px;
+  height: 100%;
+  border-radius: 30px;
+  background-color: var(--blue);
+}
+
+/* About */
+
+.about {
+  width: 100%;
+  padding: 80px 0; 
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+}
+.about__container {
+  width: 767px;
+}
+.about__title {
+  font-size: 48px;
+  font-weight: 600px;
+  line-height: 56px;
+  margin-bottom: 50px;
+}
+.about__text {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 40px 30px 56px 30px;
+  margin-bottom: 30px;
+  background-color: var(--light-gray);
+}
+.about__btn {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--light-gray-text);
+  background-color: var(--blue);
+  padding: 20px 40px;
+  border-radius: 100px;
+  float: right;
+}
+.about__img {
+  width: 700px;
+  height: 466px;
+}
