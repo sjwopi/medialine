@@ -12,14 +12,14 @@
 <body class="root">
   
   <header class="header">
-    <img src="./img/logo.png" alt="лого компании медиалайн" class="header__logo"/>
+    <img src="./img/logo.svg" alt="лого компании медиалайн" class="header__logo"/>
 
     <nav class="header__nav">
-      <a class="header__link">Главная</a>
-      <a class="header__link">Новости</a>
-      <a class="header__link">О компании</a>
-      <a class="header__link">Преимущества</a>
-      <a class="header__link">Продукция</a>
+      <a href="#" class="header__link">Главная</a>
+      <a href="#" class="header__link">Новости</a>
+      <a href="#" class="header__link">О компании</a>
+      <a href="#" class="header__link">Преимущества</a>
+      <a href="#" class="header__link">Продукция</a>
     </nav>
   </header>
 
@@ -42,7 +42,7 @@
 
     <section class="about">
       <div class="about__container">
-        <h3 class="about__title">О нас</h3>
+        <h3 class="title">О нас</h3>
         <p class="about__text">MEDIALINE Group является единственным в России специализированным дистрибьютором, владеющим полным портфелем контрактов со всеми основными иностранными и российскими производителями продуктов, систем и комплексных решений для диагностики и лечения сахарного диабета.</p>
         <button class="about__btn">Задать вопрос</button>
       </div>
@@ -50,21 +50,124 @@
     </section>
 
     <section class="advantages">
-      <article class="advantages__item">
-        <img class="advantages__item-img" src="./img/XMLID_2_.svg" alt="рукопожатие" />
-        <span class="advantages__item-text">Гарантируем 100% качество поставляемых товаров</span>
-      </article>
+      <h2 class="title">Преимущества</h2>
+      <div class="advantages__container">
+        <article class="advantages__item">
+          <img class="advantages__item-img" src="./img/XMLID_2_.svg" alt="рукопожатие" />
+          <span class="advantages__item-text text">Гарантируем 100% качество поставляемых товаров</span>
+        </article>
+
+        <article class="advantages__item">
+          <img class="advantages__item-img" src="./img/карта.svg" alt="карта" />
+          <span class="advantages__item-text text">Вся продукция закупается напрямую</span>
+        </article>
+
+        <article class="advantages__item">
+          <img class="advantages__item-img" src="./img/глобус.svg" alt="глобус" />
+          <span class="advantages__item-text text">Доставим в любую точку страны</span>
+        </article>
+
+        <article class="advantages__item">
+          <img class="advantages__item-img" src="./img/товар.svg" alt="товар" />
+          <span class="advantages__item-text text">Постоянное наличие товара на складе</span>
+        </article>
+        
+        <article class="advantages__item">
+          <img class="advantages__item-img" src="./img/дата.svg" alt="дата" />
+          <span class="advantages__item-text text">Максимально возможные сроки годности товара</span>
+        </article>
+
+        <article class="advantages__item">
+          <img class="advantages__item-img" src="./img/таблетки.svg" alt="таблетки" />
+          <span class="advantages__item-text text">Более 300 товарных позиций </span>
+        </article>
+      </div>
     </section>
 
     <section class="conditions">
+      <h2 class="title">Условия работы</h2>
+      <div class="conditions__container">
+
+        <list class="conditions__list">
+          <h3 class="conditions__subtitle">Условия</h3>
+
+          <li class="conditions__item">
+            <p class="text">
+              <span class="conditions__item-number">1</span>
+              Предоплата – поставка продукции осуществляется после оплаты всей суммы заказа и поступления денежных средств на наш расчетный счет.</p>
+          </li>
+
+          <li class="conditions__item">
+            <p class="text">
+              <span class="conditions__item-number">2</span>
+              Товарный кредит – предоставляется на 30, 45 и 60 календарных дней, поставка продукции осуществляется в соответствии с согласованным и утвержденным лимитом кредита. Договор заключается после предоставления Покупателем соответствующего пакета правоустанавливающих и финансовых документов.
+            </p>
+          </li>
+
+        </list>
+          
+        <div class="conditions__list">
+          <h3 class="conditions__subtitle">Форма доставки</h3>
+          <list class="conditions__list">
+            
+            <li class="conditions__item">
+              <p class="text">
+                <span class="conditions__item-number">1</span>
+                Бесплатная доставка собственным автотранспортом компании в пределах Нижнего Новгорода при заказе на сумму более 1000 рублей, Москвы - по договоренности.
+              </p>
+            </li>
+
+            <li class="conditions__item">
+              <p class="text">
+                <span class="conditions__item-number">2</span>
+                Бесплатная доставка в регионы РФ до склада экспедиторской компании. Данная услуга действует при заказе продукции на сумму более 50 тысяч рублей.
+              </p>
+            </li>
+
+            <li class="conditions__item">
+              <p class="text">
+                <span class="conditions__item-number">3</span>
+                В случае, если Ваша организация находится в Нижнем Новгород или Москве и сумма Вашего заказа меньше минимальной, Вы можете забрать товар самовывозом. Если Ваша организация находится в другом городе, и сумма Вашего заказа меньше минимальной, мы можем организовать доставку за Ваш счет.
+              </p>
+            </li>
+          </list>
+        </div>
+
+      </div>
     </section>
     
     <section class="manufacturers">
+      <h2 class="title">Производители</h2>
+      <div class="manufacturers__container">
+        <img src="./img/Group 5.png" alt="лого производителя"/>
+        <img src="./img/Group 6.png" alt="лого производителя"/>
+        <img src="./img/Group 7.png" alt="лого производителя"/>
+        <img src="./img/Group 8.png" alt="лого производителя"/>
+        <img src="./img/Group 9.png" alt="лого производителя"/>
+        <img src="./img/Group 10.png" alt="лого производителя"/>
+      </div>
     </section>
     
   </main>
   
   <footer class="footer">
+    <div class="footer__container">
+      <img src="./img/logo-white.svg" alt="лого компании медиалайн" class="footer__logo"/>
+      <span class="footer__logo-text">ООО «Группа МЕДИАЛАЙН»</span>
+    </div>
+
+    <list class="footer__list footer__container">
+      <li class="footer__description">Главный офис: 603024, Нижний Новгород, улица Невзоровых, дом 87, офис 10</li>
+      <li class="footer__description footer__description_small">Телефон: (831) 429-03-58</li>
+      <li class="footer__description footer__description_small">Факс: (831) 421-52-57</li>
+      <li class="footer__description footer__description_small">Email: kravchenko.andrey@mdlgroup.ru</li>
+    </list>
+
+    <list class="footer__list footer__container">
+      <li class="footer__description">Филиал: 125008, Москва, <br> проезд Черепановых, дом 32</li>
+      <li class="footer__description">Телефон: (499) 153-16-50, 154-97-35</li>
+      <li class="footer__description footer__description_small">Факс: (499) 154-97-35</li>
+    </list>
   </footer>
 </body>
 
