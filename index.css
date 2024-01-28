@@ -439,6 +439,7 @@
   }
   .overlay__rectange {
     top: calc(100% - 40px);
+    left: 0;
     padding: 10px 0;
     height: 40px;
     max-width: 100%;
@@ -539,11 +540,13 @@
     margin-right: 20px;
   }
   .about__img {
-    max-width: 390px;
+    max-width: 330px;
+    margin: 0 auto;
   }
   
   .content {
-    max-width: 390px;
+    width: 390px;
+    max-width: 100%;
   }
   .overlay {
     margin-bottom: 0;
@@ -582,12 +585,17 @@
   }
 
   .manufacturers__container {
-    max-width: 390px;
+    width: 390px;
+    max-width: 100%;
     padding: 20px 0;
     height: fit-content;
     column-gap: 20px;
     row-gap: 20px;
     justify-content: center;
+  }
+  .manufacturers__container img {
+    max-height: 30px;
+    object-fit: contain;
   }
 
   .footer {
