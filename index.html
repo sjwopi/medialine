@@ -13,15 +13,17 @@
 </head>
 
 <body class="root">
+  <div class="modal-over"></div>
   <header class="header">
     <img src="./img/logo.svg" alt="лого компании медиалайн" class="header__logo"/>
 
     <nav class="header__nav">
       <a href="#" class="header__link">Главная</a>
       <a href="#" class="header__link">Новости</a>
-      <a href="#" class="header__link">О компании</a>
-      <a href="#" class="header__link">Преимущества</a>
+      <a href="#about" class="header__link">О компании</a>
+      <a href="#advantages" class="header__link">Преимущества</a>
       <a href="#" class="header__link">Продукция</a>
+      <a href="#contacts" class="header__link">Контакты</a>
     </nav>
   </header>
 
@@ -29,6 +31,15 @@
     <button class="header-mob__btn"></button>
     <img src="./img/logo.svg" alt="лого компании медиалайн" class="header-mob__logo"/>
     <img class="overlay__search-img" src="./img/search-dark.svg" alt="поисковая лупа" />
+
+    <div class="header-mob__container">
+      <a href="#" class="header-mob__link">Главная</a>
+      <a href="#" class="header-mob__link">Новости</a>
+      <a href="#about" class="header-mob__link">О компании</a>
+      <a href="#advantages" class="header-mob__link">Преимущества</a>
+      <a href="#" class="header-mob__link">Продукция</a>
+      <a href="#contacts" class="header-mob__link">Контакты</a>
+    </div>
   </header>
 
   <main class="content">
@@ -36,16 +47,16 @@
       <img class="overlay__img" src="./img/main-overlay.png" alt="Доктор за столом" />
       <div class="overlay__rectange"><p>Все для контродя сахарного диабета</p></div>
 
-      <div class="overlay__search">
+      <form class="overlay__search">
         <input class="overlay__input" placeholder="Что хотите найти?"/>
 
         <button class="overlay__search-btn">
           <img class="overlay__search-img" src="./img/search.svg" alt="поисковая лупа" />
         </button>
-      </div>
+      </form>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__container">
         <h3 class="title">О нас</h3>
         <p class="about__text text">MEDIALINE Group является единственным в России специализированным дистрибьютором, владеющим полным портфелем контрактов со всеми основными иностранными и российскими производителями продуктов, систем и комплексных решений для диагностики и лечения сахарного диабета.</p>
@@ -54,7 +65,7 @@
       <img class="about__img" src="./img/doctor-checking-patient-side-view 1-min.png" alt="доктор берет анализ на сахар"/>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <h2 class="title">Преимущества</h2>
       <div class="advantages__container">
         <article class="advantages__item">
@@ -93,7 +104,7 @@
       <h2 class="title">Условия работы</h2>
       <div class="conditions__container">
 
-        <list class="conditions__list">
+        <ul class="conditions__list">
           <h3 class="conditions__subtitle">Оплата</h3>
 
           <li class="conditions__item">
@@ -109,9 +120,9 @@
             </p>
           </li>
 
-        </list>
+        </ul>
           
-        <list class="conditions__list">
+        <ul class="conditions__list">
           <h3 class="conditions__subtitle">Форма доставки</h3>
             
             <li class="conditions__item">
@@ -134,7 +145,7 @@
                 В случае, если Ваша организация находится в Нижнем Новгород или Москве и сумма Вашего заказа меньше минимальной, Вы можете забрать товар самовывозом. Если Ваша организация находится в другом городе, и сумма Вашего заказа меньше минимальной, мы можем организовать доставку за Ваш счет.
               </p>
             </li>
-          </list>
+          </ul>
 
       </div>
     </section>
@@ -150,6 +161,34 @@
         <img src="./img/Group 10.png" alt="лого производителя"/>
       </div>
     </section>
+
+    <section class="contacts" id="contacts">
+      <h2 class="title">Наши контакты</h2>
+      <div class="contacts__container">
+
+        <form class="contacts__form">
+          <h3 class="contacts__title">Остались вопросы?<br>Cпросите специалиста!</h3>
+          <input class="contacts__input" placeholder="Ваше имя">
+          <input class="contacts__input" placeholder="Ваш телефон">
+          <a class="contacts__subtext">Заполняя настоящую форму вы даете свое согласие на <u>обработку своих персональных данных.</u></a>
+          <button class="contacts__btn">отправить</button>
+        </form>
+
+        <div class="contacts__text-list">
+          <ul class="contacts__list">
+            <li class="contacts__item"><span><b>Главный офис:</b></span><br>603024, Нижний Новгород, улица Невзоровых, дом 87, офис 10</li>
+            <li class="contacts__item"><b>Телефон:</b> (831) 429-03-58</li>
+            <li class="contacts__item"><b>Факс:</b> (831) 421-52-57</li>
+            <li class="contacts__item"><b>Email:</b> kravchenko.andrey@mdlgroup.ru</li>
+          </ul>
+          <ul class="contacts__list">
+            <li class="contacts__item"><span><b>Филиал: </b></span><br>125008, Москва, проезд Черепановых, дом 32</li>
+            <li class="contacts__item"><b>Телефон:</b> (499) 153-16-50, 154-97-35</li>
+            <li class="contacts__item"><b>Факс:</b> (499) 154-97-35</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     
   </main>
   
@@ -159,19 +198,21 @@
       <span class="footer__logo-text">ООО «Группа МЕДИАЛАЙН»</span>
     </div>
 
-    <list class="footer__list footer__container">
+    <ul class="footer__list footer__container">
       <li class="footer__description">Главный офис: 603024, Нижний Новгород, улица Невзоровых, дом 87, офис 10</li>
       <li class="footer__description footer__description_small">Телефон: (831) 429-03-58</li>
       <li class="footer__description footer__description_small">Факс: (831) 421-52-57</li>
       <li class="footer__description footer__description_small">Email: kravchenko.andrey@mdlgroup.ru</li>
-    </list>
+    </ul>
 
-    <list class="footer__list footer__container">
+    <ul class="footer__list footer__container">
       <li class="footer__description">Филиал: 125008, Москва, <br> проезд Черепановых, дом 32</li>
       <li class="footer__description">Телефон: (499) 153-16-50, 154-97-35</li>
       <li class="footer__description footer__description_small">Факс: (499) 154-97-35</li>
-    </list>
+    </ul>
   </footer>
+
+  <script src="./index.js"></script>
 </body>
 
 </html>
